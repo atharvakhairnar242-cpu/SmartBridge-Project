@@ -8,7 +8,7 @@ The goal of this project is to help farmers, gardeners, and agricultural experts
 
 The model is trained on plant leaf image datasets and can predict the disease category from a leaf image uploaded by the user.
 
----
+
 
 ## Objectives
 
@@ -17,7 +17,6 @@ The model is trained on plant leaf image datasets and can predict the disease ca
 * Train and evaluate the model using image datasets.
 * Deploy the trained model using a Flask web application for real-time predictions.
 
----
 
 ## Technologies Used
 
@@ -29,11 +28,11 @@ The model is trained on plant leaf image datasets and can predict the disease ca
 * Matplotlib / Seaborn
 * Git & GitHub
 
----
+
 
 ## Project Structure
 
-```
+
 PlantCare-AI
 │
 ├── data/
@@ -56,9 +55,9 @@ PlantCare-AI
 │
 ├── requirements.txt
 └── README.md
-```
 
----
+
+
 
 ## Project Workflow
 
@@ -92,7 +91,7 @@ PlantCare-AI
 * Create HTML interface for image upload
 * Integrate the trained model for predictions
 
----
+
 
 ## Expected Output
 
@@ -100,7 +99,7 @@ PlantCare-AI
 * Performance evaluation metrics
 * Web application for plant disease prediction
 
----
+
 
 ## Future Improvements
 
@@ -109,8 +108,9 @@ PlantCare-AI
 * Add more plant species and diseases
 * Develop a mobile application version
 
----
+
 
 ## Conclusion
 
 PlantCare AI demonstrates the practical use of artificial intelligence and transfer learning in agriculture, providing an accessible tool for early plant disease detection and improved crop health management.
+
