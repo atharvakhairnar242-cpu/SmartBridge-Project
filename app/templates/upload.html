@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload Plant Image</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='upload.css') }}">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+<div class="logo">🌱 PlantCare AI</div>
+
+<div class="menu">
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a class="btn" href="/upload">Get Started</a>
+</div>
+</nav>
+
+
+<!-- Upload Section -->
+
+<section class="upload-section">
+
+<h1>Upload Plant Image</h1>
+<p>Take or upload a clear photo of the affected plant leaf</p>
+
+
+<div class="upload-box">
+
+<form action="/predict" method="POST" enctype="multipart/form-data">
+
+<div class="drag-area">
+
+<div class="upload-icon">⬆️</div>
+
+<h3>Drag & Drop Image Here</h3>
+
+<p>or click to browse from your device</p>
+
+<input type="file" name="image" required>
+
+<button type="submit">Choose Image</button>
+
+</div>
+
+</form>
+
+</div>
+
+
+<!-- Tips Section -->
+
+<div class="tips">
+
+<h3>📸 Tips for Best Results</h3>
+
+<ul>
+<li>✔ Take photos in good lighting</li>
+<li>✔ Focus on the affected leaf area</li>
+<li>✔ Keep the camera steady</li>
+<li>✔ Avoid blurry images</li>
+</ul>
+
+</div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+<p>🌿 Smart Bridge Hyderabad</p>
+<p>Empowering agriculture through innovative AI solutions</p>
+<p>© 2025 Smart Bridge Hyderabad. All rights reserved.</p>
+
+</footer>
+
+</body>
+</html>

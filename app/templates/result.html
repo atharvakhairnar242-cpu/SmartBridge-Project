@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Analysis Result</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+<div class="logo">🌱 PlantCare AI</div>
+
+<div class="menu">
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a class="btn" href="/upload">New Analysis</a>
+</div>
+</nav>
+
+
+<!-- Result Section -->
+
+<section class="result-container">
+
+<h1>Analysis Complete</h1>
+<p class="subtitle">Here's what we found</p>
+
+<div class="result-box">
+
+<!-- Uploaded Image -->
+
+<div class="image-card">
+
+<h3>Uploaded Image</h3>
+
+<img src="{{ image_path }}" alt="Uploaded Leaf">
+
+</div>
+
+
+<!-- Prediction Card -->
+
+<div class="analysis-card">
+
+<div class="status">✓ Healthy Plant</div>
+
+<div class="check">✔</div>
+
+<div class="info">
+
+<p class="label">Plant Type</p>
+<h3>Tomato</h3>
+
+<p class="label">Condition</p>
+<h4 class="healthy">{{ prediction }}</h4>
+
+</div>
+
+<div class="tips">
+
+<h4>🌱 Keep Your Plant Healthy</h4>
+
+<ul>
+<li>Continue regular watering and care</li>
+<li>Ensure adequate sunlight and nutrients</li>
+<li>Monitor for any changes in appearance</li>
+<li>Maintain good air circulation</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Buttons -->
+
+<div class="result-buttons">
+
+<a class="primary-btn" href="/upload">Analyze Another Image</a>
+<a class="secondary-btn" href="/">Back to Home</a>
+
+</div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+<p>🌿 Smart Bridge Hyderabad</p>
+<p>Empowering agriculture through innovative AI solutions</p>
+<p>© 2025 Smart Bridge Hyderabad. All rights reserved.</p>
+
+</footer>
+
+</body>
+</html>
