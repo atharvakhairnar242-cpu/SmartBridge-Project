@@ -62,6 +62,17 @@ PlantCare-AI
 
 ## Project Workflow
 
+1. User opens the web application.
+2. User uploads a plant leaf image.
+3. The uploaded image is resized to 224x224 and normalized.
+4. The MobileNetV2 model analyzes the image.
+5. The predicted plant disease class is displayed to the user.
+
+Pipeline:
+
+Dataset → Preprocessing → Model Training → Model Evaluation → Web Application
+
+
 ### Data Collection and Preprocessing
 
 * Download plant disease dataset
